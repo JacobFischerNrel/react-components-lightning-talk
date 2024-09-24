@@ -19,7 +19,7 @@ export default function RootLayout({
           <h1>React Components Comparison</h1>
         </Link>
         <div style={{ display: 'flex' }}>
-          <div style={{ flex: 1, width: '50%' }}>{children}</div>
+          <div style={{ flex: 1, width: '50%', backgroundColor: '#ededed', borderRadius: '0.5rem', padding: '0.5rem' }}>{children}</div>
           <div style={{ flex: 1, width: '50%' }}>
             <CodeHighlight />
           </div>
