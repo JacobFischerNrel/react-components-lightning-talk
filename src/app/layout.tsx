@@ -1,6 +1,6 @@
-import { Metadata } from 'next';
-import CurrentPath from './CurrentPath';
+import type { Metadata } from 'next';
 import Link from 'next/link';
+import CodeHighlight from './CodeHighlight';
 
 export const metadata: Metadata = {
   title: 'React Component Lightning Talk',
@@ -18,8 +18,12 @@ export default function RootLayout({
         <Link href="/">
           <h1>React Components Comparison</h1>
         </Link>
-        <CurrentPath />
-        <div>{children}</div>
+        <div style={{ display: 'flex' }}>
+          <div style={{ flex: 1, width: '50%' }}>{children}</div>
+          <div style={{ flex: 1, width: '50%' }}>
+            <CodeHighlight />
+          </div>
+        </div>
       </body>
     </html>
   );

@@ -1,0 +1,209 @@
+[
+  {
+    "title": "Leviathan Wakes",
+    "author": "James S.A. Corey",
+    "genre": "Science Fiction",
+    "year": 2011,
+    "description": "The first book in The Expanse series, where a detective and a spaceship crew uncover a conspiracy that threatens humanity.",
+    "review": "An engaging blend of noir detective story and space opera, perfect for fans of sprawling space adventures with political intrigue.",
+    "isbn": "9780316129084"
+  },
+  {
+    "title": "Mistborn: The Final Empire",
+    "author": "Brandon Sanderson",
+    "genre": "Fantasy",
+    "year": 2006,
+    "description": "In a world where ash falls from the sky, a group of rebels plans to overthrow a tyrannical lord using magic.",
+    "review": "Sanderson’s intricate magic system and compelling characters make this a must-read for any fantasy fan.",
+    "isbn": "9780765311788"
+  },
+  {
+    "title": "The Bobiverse Trilogy",
+    "author": "Dennis E. Taylor",
+    "genre": "Science Fiction",
+    "year": 2017,
+    "description": "A story of a man who becomes a sentient AI and explores the universe, creating multiple copies of himself.",
+    "review": "A humorous and inventive take on space exploration and AI, full of clever references to science fiction culture.",
+    "isbn": "9781680680584"
+  },
+  {
+    "title": "Columbus Day",
+    "author": "Craig Alanson",
+    "genre": "Science Fiction",
+    "year": 2016,
+    "description": "The first book in the Expeditionary Force series, where a man becomes humanity's unlikely savior against alien threats.",
+    "review": "Packed with action, humor, and quirky characters, this fast-paced adventure will appeal to military sci-fi fans.",
+    "isbn": "9781539197475"
+  },
+  {
+    "title": "Project Hail Mary",
+    "author": "Andy Weir",
+    "genre": "Science Fiction",
+    "year": 2021,
+    "description": "A lone astronaut wakes up on a spaceship with no memory and must save humanity from an existential threat.",
+    "review": "Weir returns with another scientifically rigorous and thrilling adventure, reminiscent of 'The Martian,' but with an added emotional depth.",
+    "isbn": "9780593135204"
+  },
+  {
+    "title": "A Psalm for the Wild-Built",
+    "author": "Becky Chambers",
+    "genre": "Science Fiction",
+    "year": 2021,
+    "description": "A monk and a robot embark on a journey to explore the meaning of life and purpose in a post-human world.",
+    "review": "A gentle, hopeful, and philosophical story about purpose, nature, and companionship in a beautifully imagined future.",
+    "isbn": "9781250236210"
+  },
+  {
+    "title": "The Ministry for the Future",
+    "author": "Kim Stanley Robinson",
+    "genre": "Science Fiction",
+    "year": 2020,
+    "description": "A gripping narrative about climate change and global politics, centered around a new international organization.",
+    "review": "Ambitious in scope and grounded in real-world science, this novel offers a thought-provoking look at climate crisis solutions.",
+    "isbn": "9780316300131"
+  },
+  {
+    "title": "Gideon the Ninth",
+    "author": "Tamsyn Muir",
+    "genre": "Fantasy",
+    "year": 2019,
+    "description": "A necromancer and her swordswoman must navigate deadly trials to unlock the secrets of a mysterious universe.",
+    "review": "Darkly funny, gothic, and wildly imaginative, this is a fresh take on necromancy and space opera, blending magic and mystery.",
+    "isbn": "9781250313195"
+  },
+  {
+    "title": "All Systems Red",
+    "author": "Martha Wells",
+    "genre": "Science Fiction",
+    "year": 2017,
+    "description": "A security android goes rogue and discovers its own sense of self while protecting a group of humans.",
+    "review": "Wells’ 'Murderbot Diaries' delivers a uniquely sarcastic, introverted AI protagonist in a thrilling and thoughtful sci-fi novella.",
+    "isbn": "9780765397522"
+  },
+  {
+    "title": "Rhythm of War",
+    "author": "Brandon Sanderson",
+    "genre": "Fantasy",
+    "year": 2020,
+    "description": "The fourth book in The Stormlight Archive, focusing on war, politics, and personal struggles in a fantastical world.",
+    "review": "A complex, character-driven epic with stunning world-building, Sanderson’s latest entry to the series is both grand and intimate.",
+    "isbn": "9780765326386"
+  },
+  {
+    "title": "The Broken Earth Trilogy",
+    "author": "N.K. Jemisin",
+    "genre": "Fantasy",
+    "year": 2015,
+    "description": "A groundbreaking trilogy exploring themes of oppression and survival in a world plagued by geological cataclysms.",
+    "review": "Winner of multiple Hugo Awards, this series is a masterpiece of world-building, blending environmental themes with deep emotional resonance.",
+    "isbn": "9780316229296"
+  },
+  {
+    "title": "The Poppy War Trilogy",
+    "author": "R.F. Kuang",
+    "genre": "Fantasy",
+    "year": 2018,
+    "description": "A dark fantasy series inspired by Chinese history, following a war orphan who discovers her shamanic powers.",
+    "review": "An intense, morally complex series that blends magic, military strategy, and historical allegory to explore themes of trauma and power.",
+    "isbn": "9780062662569"
+  },
+  {
+    "title": "Jade Legacy",
+    "author": "Fonda Lee",
+    "genre": "Fantasy",
+    "year": 2021,
+    "description": "The conclusion of the Green Bone Saga, exploring family loyalty and power struggles in a world of jade magic.",
+    "review": "A powerful, action-packed conclusion to a saga of clan warfare, family, and honor, blending Asian-inspired fantasy with modern themes.",
+    "isbn": "9780316440912"
+  },
+  {
+    "title": "The House in the Cerulean Sea",
+    "author": "TJ Klune",
+    "genre": "Fantasy",
+    "year": 2020,
+    "description": "A heartwarming tale about a caseworker who discovers a magical orphanage and the children who reside there.",
+    "review": "A charming, whimsical, and deeply touching story about acceptance, found family, and kindness in a magical world.",
+    "isbn": "9781250217318"
+  },
+  {
+    "title": "Blacktongue Thief",
+    "author": "Christopher Buehlman",
+    "genre": "Fantasy",
+    "year": 2021,
+    "description": "A witty fantasy adventure following a thief as he navigates treachery and magic in a dangerous world.",
+    "review": "Buehlman blends dark humor, gritty action, and deep world-building into a rollicking fantasy adventure filled with sharp dialogue.",
+    "isbn": "9781250621191"
+  },
+  {
+    "title": "A Court of Silver Flames",
+    "author": "Sarah J. Maas",
+    "genre": "Fantasy",
+    "year": 2021,
+    "description": "A companion novel to the A Court of Thorns and Roses series, focusing on the struggles of a warrior's heart.",
+    "review": "An intense, steamy, and character-driven addition to the series, exploring themes of trauma, healing, and self-empowerment.",
+    "isbn": "9781681196282"
+  },
+  {
+    "title": "The Priory of the Orange Tree",
+    "author": "Samantha Shannon",
+    "genre": "Fantasy",
+    "year": 2019,
+    "description": "An epic standalone fantasy featuring dragons, political intrigue, and a diverse cast of strong women.",
+    "review": "A lush, intricate fantasy with dragons, forbidden love, and political intrigue, Shannon’s world-building is as vast as it is compelling.",
+    "isbn": "9781635570306"
+  },
+  {
+    "title": "The Unbroken",
+    "author": "C.L. Clark",
+    "genre": "Fantasy",
+    "year": 2021,
+    "description": "A gripping tale of colonialism, loyalty, and rebellion, centered around a soldier and a revolutionary.",
+    "review": "A fierce, unflinching examination of loyalty and power, set against a backdrop of rebellion and the horrors of colonialism.",
+    "isbn": "9780316542753"
+  },
+  {
+    "title": "The Invisible Life of Addie LaRue",
+    "author": "V.E. Schwab",
+    "genre": "Fantasy",
+    "year": 2020,
+    "description": "A poignant story about a young woman who makes a Faustian bargain to live forever, but is forgotten by everyone she meets.",
+    "review": "A hauntingly beautiful exploration of immortality, memory, and identity, Addie LaRue is poetic, heartbreaking, and unforgettable.",
+    "isbn": "9780765387561"
+  },
+  {
+    "title": "Piranesi",
+    "author": "Susanna Clarke",
+    "genre": "Fantasy",
+    "year": 2020,
+    "description": "A hauntingly beautiful novel about a man living in a mysterious house with endless corridors and an ocean.",
+    "review": "A surreal, atmospheric novel that weaves mystery and philosophy into a hauntingly unique world that defies easy explanation.",
+    "isbn": "9781635575639"
+  },
+  {
+    "title": "The Space Between Worlds",
+    "author": "Micaiah Johnson",
+    "genre": "Science Fiction",
+    "year": 2020,
+    "description": "In a multiverse where travel is possible between parallel worlds, a woman discovers secrets that could change everything.",
+    "review": "A thought-provoking sci-fi novel that deftly explores identity, class, and the morality of multiverse travel.",
+    "isbn": "9780593135051"
+  },
+  {
+    "title": "The Once and Future Witches",
+    "author": "Alix E. Harrow",
+    "genre": "Fantasy",
+    "year": 2020,
+    "description": "A story of witchcraft and sisterhood set in a world where women fight for their rights and magic is real.",
+    "review": "A powerful feminist fantasy that weaves history, magic, and the fight for women's rights into a richly imaginative tale.",
+    "isbn": "9780316422048"
+  },
+  {
+    "title": "DMZ",
+    "author": "Rachel Aaron",
+    "genre": "Fantasy",
+    "year": 2017,
+    "description": "A thrilling tale of magic and conflict, where a young mage navigates a war-torn world to find her destiny.",
+    "review": "An action-packed, character-driven fantasy full of magic, political intrigue, and a heroine navigating a dangerous world.",
+    "isbn": "9781949673029"
+  }
+]

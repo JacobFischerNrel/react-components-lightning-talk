@@ -1,4 +1,4 @@
-import { Book } from '../shapes/book';
+import { Book } from '@/data/getBook';
 
 export default function DisplayBook(props: Book) {
   return (
@@ -7,11 +7,8 @@ export default function DisplayBook(props: Book) {
         <strong>{props.title}</strong> by <em>{props.author}</em>
       </div>
       <div>
-        <em>{props.genre}</em> -{' '}
-        <em>
-          {props.releaseDate.getMonth() + 1}/{props.releaseDate.getDay() + 1}/
-          {props.releaseDate.getFullYear()}
-        </em>
+        <em>{props.genre}</em> - <em>{props.year}</em> -{' '}
+        <code>{props.isbn}</code>
       </div>
       <div>{props.description}</div>
     </div>
