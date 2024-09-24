@@ -32,6 +32,9 @@ export default function FinalNotes() {
 
 ### Final Notes
 - In many places, the example code is not "dry" enough, but I left it un-optimized for better examples
+- Converting from a client-only app to server-components is a lot of work
+  - On the Clean Energy Connector project, it took approximately 2 months of work (while heavily refactoring everything)
+  - We saw bundle savings of approx 70%, and speed increases of approx x3
 - There's still lots of Next.js specific pain points to resolve, such as magic path strings, dead urls, proper css classes, etc.
 - Style libraries are not covered, but many CSS-in-JS solutions, like styled-components or Emotion, do NOT work [well] in server components, and rely on client components.
   - There is a tectonic shift going on in the React ecosystem as they move to raw css or css modules to support server components.
