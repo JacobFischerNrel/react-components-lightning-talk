@@ -11,8 +11,9 @@ export default async function Home() {
       <p>These are the dynamically generated pages in the application.</p>
       <p>Code used to generate these pages is displayed on the right.</p>
       <p>
-        For the examples, we have a simple json &quot;database&quot; of books to
-        pull records from.
+        For the examples, we have a simple json &quot;database&quot; of books
+        (that I&apos;ve read and would recommend to everyone) to pull records
+        from.
       </p>
       <h3>Pages</h3>
       <Directory path={basePath} />
