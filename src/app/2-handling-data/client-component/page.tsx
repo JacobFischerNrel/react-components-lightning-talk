@@ -1,12 +1,12 @@
 'use client';
 
 import DisplayBook from '@/components/DisplayBook';
-import type { Book } from '@/data/getBook';
+import { book } from '@prisma/client';
 
 import { useState, useEffect } from 'react';
 
 export default function HandlingDataClientComponent() {
-  const [books, setBooks] = useState<null | ReadonlyArray<Book>>(null);
+  const [books, setBooks] = useState<null | ReadonlyArray<book>>(null);
   const [isLoading, setLoading] = useState(true);
 
   useEffect(() => {
@@ -21,7 +21,7 @@ export default function HandlingDataClientComponent() {
         // what if some weird middleware mutated it?
         // as the client, we shouldn't trust this, and really should inspect
         // the result and ensure its the real shape (zod is a great lib for this)
-        setBooks(rawData as ReadonlyArray<Book>);
+        setBooks(rawData as ReadonlyArray<book>);
       });
   }, []);
 

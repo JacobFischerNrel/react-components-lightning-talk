@@ -1,11 +1,11 @@
 'use client';
 
 import DisplayBook from '@/components/DisplayBook';
-import type { Book } from '@/data/getBook';
+import { book } from '@prisma/client';
 import React from 'react';
 
 interface HandlingDataClientComponentState {
-  books: ReadonlyArray<Book> | null;
+  books: ReadonlyArray<book> | null;
   isLoading: boolean;
 }
 
@@ -26,7 +26,7 @@ export default class HandlingDataClassComponent extends React.Component<
       .then((res) => res.json())
       .then((rawData) => {
         this.setState({ isLoading: false });
-        this.setState({ books: rawData as ReadonlyArray<Book> });
+        this.setState({ books: rawData as ReadonlyArray<book> });
       })
       .catch(() => {
         this.setState({ isLoading: false, books: null });

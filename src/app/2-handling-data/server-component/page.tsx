@@ -1,8 +1,8 @@
 import DisplayBook from '@/components/DisplayBook';
-import getAllBooks from '@/data/getAllBooks';
+import database from '@/data/database';
 
 export default async function HandlingDataServerComponent() {
-  const books = await getAllBooks();
+  const books = await database.book.findMany();
 
   return (
     <ul>

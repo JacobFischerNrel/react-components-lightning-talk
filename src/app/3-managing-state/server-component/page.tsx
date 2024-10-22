@@ -1,6 +1,5 @@
 import DisplayBook from '@/components/DisplayBook';
-import getAllBooks from '@/data/getAllBooks';
-import { getBook } from '@/data/getBook';
+import database from '@/data/database';
 import Link from 'next/link';
 
 export default async function ManagingStateServerComponent(props: {
@@ -10,38 +9,52 @@ export default async function ManagingStateServerComponent(props: {
 }) {
   const rawIsbn = props.searchParams.isbn;
   const maybeIsn = typeof rawIsbn === 'string' ? rawIsbn : undefined;
-  const isbn = maybeIsn || (await getAllBooks())[0]?.isbn;
 
-  if (!isbn) {
+  const book = await (maybeIsn
+    ? database.book.findUnique({
+        where: {
+          isbn: maybeIsn,
+        },
+      })
+    : database.book.findFirst());
+
+  if (!book) {
     return <strong>Error loading isbn!</strong>;
   }
 
-  const got = await getBook(isbn);
-  if (!got) {
-    return <strong>Error loading book!</strong>;
-  }
+  const [prev] = await database.book.findMany({
+    cursor: {
+      isbn: book.isbn,
+    },
+    skip: 1,
+    take: -1,
+  });
+
+  const [next] = await database.book.findMany({
+    cursor: {
+      isbn: book.isbn,
+    },
+    skip: 1,
+    take: 1,
+  });
 
   return (
     <div>
-      <DisplayBook {...got.book} />
+      <DisplayBook {...book} />
       <div>
-        {got.prevIsbn ? (
-          <Link
-            href={`/3-managing-state/server-component?isbn=${got.prevIsbn}`}
-          >
+        {prev?.isbn ? (
+          <Link href={`/3-managing-state/server-component?isbn=${prev.isbn}`}>
             Prev
           </Link>
         ) : (
           'Prev'
         )}{' '}
-        {got.nextIsbn ? (
-          <Link
-            href={`/3-managing-state/server-component?isbn=${got.nextIsbn}`}
-          >
+        {next?.isbn ? (
+          <Link href={`/3-managing-state/server-component?isbn=${next.isbn}`}>
             Next
           </Link>
         ) : (
-          'Prev'
+          'Next'
         )}
       </div>
     </div>

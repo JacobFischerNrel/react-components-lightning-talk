@@ -1,11 +1,11 @@
 'use client';
 
+import { GetBookResult } from '@/app/api/getBook/route';
 import DisplayBook from '@/components/DisplayBook';
-import type { GetBookResult } from '@/data/getBook';
 import { useEffect, useState } from 'react';
 
 export default function ManagingStateClientComponent() {
-  const [current, setCurrent] = useState(null as null | GetBookResult);
+  const [result, setResult] = useState(null as null | GetBookResult);
   const [loadIsbn, setLoadIsbn] = useState(undefined as undefined | string);
   const [isLoading, setLoading] = useState(true);
 
@@ -22,7 +22,7 @@ export default function ManagingStateClientComponent() {
         // what if some weird middleware mutated it?
         // as the client, we shouldn't trust this, and really should inspect
         // the result and ensure its the real shape (zod is a great lib for this)
-        setCurrent(rawData as GetBookResult);
+        setResult(rawData as GetBookResult);
       });
   }, [loadIsbn]);
 
@@ -30,23 +30,23 @@ export default function ManagingStateClientComponent() {
     return <em>loading...</em>;
   }
 
-  if (!current) {
+  if (!result) {
     return <strong>Error loading book</strong>;
   }
 
   return (
     <div>
-      <DisplayBook {...current.book} />
+      <DisplayBook {...result.book} />
       <div>
-        {current.prevIsbn ? (
-          <a href="#" onClick={() => setLoadIsbn(current.prevIsbn)}>
+        {result?.prev?.isbn ? (
+          <a href="#" onClick={() => setLoadIsbn(result?.prev?.isbn)}>
             Prev
           </a>
         ) : (
           'Prev'
         )}{' '}
-        {current.nextIsbn ? (
-          <a href="#" onClick={() => setLoadIsbn(current.nextIsbn)}>
+        {result?.next?.isbn ? (
+          <a href="#" onClick={() => setLoadIsbn(result?.next?.isbn)}>
             Next
           </a>
         ) : (
