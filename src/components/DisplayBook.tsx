@@ -1,6 +1,6 @@
-import { Book } from '@/data/getBook';
+import type { book } from '@prisma/client';
 
-export default function DisplayBook(props: Book) {
+export default function DisplayBook(props: book) {
   return (
     <div style={{ marginBottom: '0.5rem' }}>
       <div>
